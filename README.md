@@ -4,6 +4,8 @@
 
 ### Principala nevoie/problemă pe care o rezolvă produsul 
 
+Cum deadline-urile sunt extrem de importante in activitatea noastra zilnica, planificarea eficienta a activitatilor este un subiect de interes pentru majoritatea persoanelor in ziua de astazi. Fie ca vorbim despre planificarea activitatilor unui student (seminarii, cursuri, proiecte, teme, examene), fie ca vorbim de cea a unui angajat (meeting-uri, task-uri la locul de munca, etc), organizarea eficienta a programului este la fel de importanta. Astfel, consideram ca **planificarea eficienta si corecta a activitatilor** reprezinta o nevoie actual pe care produsul nostrum o poate rezolva.
+
 ### Cărui tip de utilizatori se adresează
 
 ### Produse similare existente pe piață 
