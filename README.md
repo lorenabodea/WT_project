@@ -50,18 +50,24 @@ GET/appointments?search={name}&orderBy={orderByName}
  response: [{  
    "name": "Fitness class",  
    "date": "11/5/2018",  
+   "start_hour": "14:00"  
+   "end_hour":"14:30"  
    "label": "health",  
    "type": "0"  
    },  
    {
      "name": "Dentist",  
      "date": "11/5/2018",   
+      "start_hour": "15:00"  
+      "end_hour":"16:30"  
      "label": "health",  
      "type":"0"  
      },  
      {  
        "name": "Meeting with products manager",  
        "date": "11/5/2018",  
+        "start_hour": "13:00"  
+        "end_hour":"14:30"  
        "label": "office",  
        "type":"1"  
        },  
@@ -75,6 +81,8 @@ GET/appointments?search={name}&orderBy={orderByName}
    response: [{  
      "name": "Stand-up",  
      "date": "11/2/2018",  
+      "start_hour": "14:00"  
+       "end_hour":"14:30"  
      "label": "office",  
      "type": "1"  
      },  
@@ -82,11 +90,15 @@ GET/appointments?search={name}&orderBy={orderByName}
        "name": "Meeting with Dave",  
        "date": "11/3/2018",   
        "label": "office",   
+        "start_hour": "14:00"  
+        "end_hour":"14:30"  
        "type":"1"  
        },  
        {
          "name": "Meeting with products manager",  
          "date": "11/5/2018",  
+          "start_hour": "14:00"  
+          "end_hour":"14:30"  
          "label": "office",  
          "type":"1"  
          },  
