@@ -45,14 +45,14 @@ put/label => edit label
 GET/appointments?search={name}&orderBy={orderByName}
 
 
-### Examples:
- request: get/appointments/5
- response: [{
-   "name": "Fitness class",
-   "date": "11/5/2018",
-   "label": "health",
-   "type": "0"
-   },
+### Examples:  
+ request: get/appointments/5  
+ response: [{  
+   "name": "Fitness class",  
+   "date": "11/5/2018",  
+   "label": "health",  
+   "type": "0"  
+   },  
    {
      "name": "Dentist",
      "date": "11/5/2018",
