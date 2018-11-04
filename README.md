@@ -32,7 +32,7 @@ Aplicatia va fi destinata uricarui tip de utilizator care are cunostinte medii d
 
 Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointments, vCita, YouCanBook.me.
 
-##API REST
+## API REST
 
 get/appointments =>returns a list with all the upcoming events  
 get/appointments/:day => returns a list of appointments from a specific day in the current month  
