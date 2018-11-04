@@ -54,44 +54,44 @@ GET/appointments?search={name}&orderBy={orderByName}
    "type": "0"  
    },  
    {
-     "name": "Dentist",
-     "date": "11/5/2018",
-     "label": "health",
-     "type":"0"
-     },
-     {
-       "name": "Meeting with products manager",
-       "date": "11/5/2018",
-       "label": "office",
-       "type":"1"
-       },
+     "name": "Dentist",  
+     "date": "11/5/2018",   
+     "label": "health",  
+     "type":"0"  
+     },  
+     {  
+       "name": "Meeting with products manager",  
+       "date": "11/5/2018",  
+       "label": "office",  
+       "type":"1"  
+       },  
 
    ]
-
-   request: get/labels/office
-   response: ["health", "office", "free_time"]
-
-   request: get/appointments/Office
-   response: [{
-     "name": "Stand-up",
-     "date": "11/2/2018",
-     "label": "office",
-     "type": "1"
-     },
-     {
-       "name": "Meeting with Dave",
-       "date": "11/3/2018",
-       "label": "office",
-       "type":"1"
-       },
-       {
-         "name": "Meeting with products manager",
-         "date": "11/5/2018",
-         "label": "office",
-         "type":"1"
-         },
   
-     ]
+   request: get/labels/office  
+   response: ["health", "office", "free_time"]  
+
+   request: get/appointments/Office  
+   response: [{  
+     "name": "Stand-up",  
+     "date": "11/2/2018",  
+     "label": "office",  
+     "type": "1"  
+     },  
+     {  
+       "name": "Meeting with Dave",  
+       "date": "11/3/2018",   
+       "label": "office",   
+       "type":"1"  
+       },  
+       {
+         "name": "Meeting with products manager",  
+         "date": "11/5/2018",  
+         "label": "office",  
+         "type":"1"  
+         },  
+  
+     ]  
 
 
 
