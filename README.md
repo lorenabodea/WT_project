@@ -105,6 +105,9 @@ GET/appointments?search={name}&orderBy={orderByName}
   
      ]  
 
-![Alt text](D/WT/photo.jpeg?raw=true "Title")
+<p align="center">
+  <img src="D/WT/photo.jpeg" width="350" title="hover text">
+ 
+</p>
 
 
