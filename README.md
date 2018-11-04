@@ -105,9 +105,5 @@ GET/appointments?search={name}&orderBy={orderByName}
   
      ]  
 
-<p align="center">
-  <img src="D/WT/photo.jpeg" width="350" title="hover text">
- 
-</p>
-
+![VD](https://drive.google.com/drive/u/0/my-drive)
 
