@@ -32,4 +32,67 @@ Aplicatia va fi destinata uricarui tip de utilizator care are cunostinte medii d
 
 Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointments, vCita, YouCanBook.me.
 
+##API REST
+
+get/appointments =>returns a list with all the upcoming events
+get/appointments/:day => returns a list of appointments from a specific day in the current month
+get/appointments/:month => returns the events from a specific month in the current year
+get/appointments/:label =? returns all the appointments that have a specific label
+post/appointments => creates an event
+put/appointments => edit an event
+post/label => creates a label (appointments will be cathegorized by labels)
+put/label => edit label 
+GET/appointments?search={name}&orderBy={orderByName}
+
+
+### Examples:
+ request: get/appointments/5
+ response: [{
+   "name": "Fitness class",
+   "date": "11/5/2018",
+   "label": "health",
+   "type": "0"
+   },
+   {
+     "name": "Dentist",
+     "date": "11/5/2018",
+     "label": "health",
+     "type":"0"
+     },
+     {
+       "name": "Meeting with products manager",
+       "date": "11/5/2018",
+       "label": "office",
+       "type":"1"
+       },
+
+   ]
+
+   request: get/labels/office
+   response: ["health", "office", "free_time"]
+
+   request: get/appointments/Office
+   response: [{
+     "name": "Stand-up",
+     "date": "11/2/2018",
+     "label": "office",
+     "type": "1"
+     },
+     {
+       "name": "Meeting with Dave",
+       "date": "11/3/2018",
+       "label": "office",
+       "type":"1"
+       },
+       {
+         "name": "Meeting with products manager",
+         "date": "11/5/2018",
+         "label": "office",
+         "type":"1"
+         },
+  
+     ]
+
+
+
 
