@@ -106,4 +106,5 @@ GET/appointments?search={name}&orderBy={orderByName}
      ]  
 
 
+![visual design](https://github.com/lorenabodea/WT_project/blob/master/visualDesign.jpeg)
 
