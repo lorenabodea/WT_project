@@ -8,6 +8,9 @@ Cum deadline-urile sunt extrem de importante in activitatea noastra zilnica, pla
 
 ### Cărui tip de utilizatori se adresează
 
+Aplicatia va fi destinata uricarui tip de utilizator care are cunostinte medii de folosire a tehnologiei. Pentru a acoperi o arie cat mai mare de utilizatori vom incerca sa construim o pagina cat mai user friendly si sugestiva. Cu toate astea, vom avea si un main target, anume persoanele care sunt  foarte ocupate. Ar fi ideal sa putem colabora cu companii pentru a facilita planificarea activitatilor zilnice ale angajatilor de la birou (meetings-uri, stand-ups, etc).
+
+
 ### Produse similare existente pe piață 
 
 1.	**Appointlet**
