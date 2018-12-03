@@ -34,16 +34,18 @@ Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointmen
 
 ## API REST - explained
 
-get/appointments =>returns a list with all the upcoming events  
-get/appointments/:day => returns a list of appointments from a specific day in the current month  
-get/appointments/:month => returns the events from a specific month in the current year  
-get/appointments/:label =? returns all the appointments that have a specific label
-post/appointments => creates an event
-put/appointments => edit an event
-post/label => creates a label (appointments will be cathegorized by labels)
-put/label => edit label 
-GET/appointments?search={name}&orderBy={orderByName}
-
+(get)appointments/get =>returns a list with all the upcoming events  
+(post)appointments/create => creates an event
+(post)appointments/changePrivacy => make an appointment public/private
+(delete)appointments/delete =>deletes an event
+(get)labels/get => gets al labels (appointments will be cathegorized by labels)
+(create)labels/create => creates label 
+(delete)labels/delete =>deletes a label
+(get)users/get =>returns all users
+(post)users/create =>creates an user
+(delete)users/delete =>deletes an user
+(get)users/get/:email => returns user by email
+(put)users/get/:email => edit one user
 
 ### Examples:  
  request: get/appointments/5  
