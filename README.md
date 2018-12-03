@@ -111,7 +111,7 @@ Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointmen
 ![visual design](https://github.com/lorenabodea/WT_project/blob/master/visualDesign.jpeg)
 
 
-##Pentru a porni aplicatia este necesar sa rulam comenzile:
+##Pentru a porni aplicatia este necesar sa rulam comenzile:  
 -> npm install (pentru a intrala modulele node necesare)  
 -> npm start (aplicatia ruleaza pe portul 3333 configurat in file-ul bin/www)  
 
