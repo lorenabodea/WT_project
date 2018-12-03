@@ -114,5 +114,6 @@ Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointmen
 ##Pentru a porni aplicatia este necesar sa rulam comenzile:  
 -> npm install (pentru a intrala modulele node necesare)  
 -> npm start (aplicatia ruleaza pe portul 3333 configurat in file-ul bin/www)  
+Alte tool-uri necesare: XAMPP(am lucrat cu baze de date mySql (localhost/phpmyadmin dupa ce dam start MySql din XAMPP)
 
 
