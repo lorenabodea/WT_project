@@ -18,14 +18,17 @@ export class LabelService {
     return this.http.get(this.baseURL + `/get`);
   }
 
-  // create(label: Label) {
-  //   return this.http.post(this.baseURL + "/create", label);
-  // }
+  postLabel(label: Label) {
+    return this.http.post(this.baseURL + "/create", label);
+  }
 
   // updateLabel(label: Label){
     
   //   return this.http.put(this.baseURL + "/update", label);
   // }
 
+  deleteLabel(label: Label){
+    return this.http.delete(this.baseURL + `/delete`);
+  }
 
 }

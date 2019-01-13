@@ -99,15 +99,22 @@
 
 
             
+
             <td *ngIf="!editAppointment">
               <a class="action-btn" (click)="onEdit(index)">
                 <p id="edit" class="material-icons pointer" title="Edit">edit</p>
               </a>
+              <a class="action-btn" title="Delete"  (click)="onDelete(i)">
+                <p id="delete" class="material-icons pointer">delete</p>
+              </a>
             </td>
 
+            <!-- <div *ngIf="!editAppointment">
+              
+            </div> -->
 
             <td *ngIf="editAppointment && selectedRowIndex == index">
-              <a class="action-btn" (click)="selectIdProforma(i)" (click)="onSave(i)">
+              <a class="action-btn" (click)="selectIdAppointment(i)" (click)="onSave(i)">
                 <p id="save" class="material-icons pointer" title="Save">save</p>
               </a>
             </td>

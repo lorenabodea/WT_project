@@ -24,4 +24,8 @@ export class AppointmentService {
   // }
 
 
+  deleteAppointment(appointment: Appointment){
+    return this.http.delete(this.baseURL + `/delete`);
+  }
+
 }

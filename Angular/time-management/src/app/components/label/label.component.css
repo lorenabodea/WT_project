@@ -9,8 +9,9 @@ body {
 #table-header {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 15px;
-  background-color: #4a86be;
+  background-color: #136e32;
   vertical-align: middle;
+  height: 25px;
 }
 
 
@@ -72,6 +73,7 @@ table.table td {
   /* width: 200px; */
   vertical-align: middle;
   text-align: center;
+  border: 1px solid #ddd;
 
   /* overflow: hidden;
       display: inline-block;
@@ -96,19 +98,25 @@ table.table td a {
 
 p#edit {
   color: #fc9105;
-  font-size: 25px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 p#save {
   color: green;
-  font-size: 25px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 p#cancel {
   color: rgb(8, 137, 197);
-  font-size: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+p#cancel {
+  color: rgb(8, 137, 197);
+  font-size: 15px;
   cursor: pointer;
 }
 

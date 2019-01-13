@@ -56,11 +56,20 @@ export class AppointmentComponent implements OnInit {
   }
 
 
+  
 
   onDelete(appointment){
     //de implementat
+    if (confirm('Are you sure you want to permanently delete this Appointment?') == true) {
+      this.appointmentService.deleteAppointment(appointment).subscribe((res) => {
+        this.refreshAppointment()
+        location.reload()
+      })
+    }
 
   }
+
+  
 
 }
 

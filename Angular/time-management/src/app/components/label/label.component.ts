@@ -56,6 +56,13 @@ export class LabelComponent implements OnInit {
 
   onDelete(label){
     //de implementat
+    if (confirm('Are you sure you want to permanently delete this Label?') == true) {
+      this.labelService.deleteLabel(label).subscribe((res) => {
+        this.refreshLabel()
+        location.reload()
+      })
+    }
+
   }
 
 
