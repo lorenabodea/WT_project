@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { AppointmentComponent } from './components/appointment/appointment.component';
+import { LabelComponent } from './components/label/label.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'calendar',
     component: CalendarComponent
+  },
+  {
+    path: 'appointments',
+    component: AppointmentComponent
+  },
+  {
+    path: 'labels',
+    component: LabelComponent
   }
 ];
 
