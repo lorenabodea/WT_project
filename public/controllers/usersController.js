@@ -27,7 +27,8 @@ module.exports.createUser = (req,res) => {
             Users.create({
                 firstname: req.body.firstname,
                 lastname: req.body.lastname,
-                email: req.body.email,
+				email: req.body.email,
+				password: req.body.password,
                 isAdmin: 0
             }).then(() => res.status(201).send({message:  "FF"}))
         }
