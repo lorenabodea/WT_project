@@ -58,3 +58,33 @@ module.exports.deleteLabel = (req,res) => {
 
 	});
 };
+
+module.exports.updateLabel = (req, res) => {
+
+	Labels.findOne({
+		where: {
+            description:req.params.description
+        },
+		raw: true
+		}).then((result) => {
+
+			if(result){
+                Labels.update(
+                    { description: req.body.description,
+						},
+                    { where: {
+						//de completat cu user id dupa ce facem middleware
+						description:req.params.description
+                    		 }
+                    }
+                ).catch(() => res.status(500).send({message: "Error"}));
+
+                res.status(200).send({message: "Label description has changed"});
+
+			} else {
+
+				res.status(404).send({message: "Label was not found"});
+			}
+	}).catch(() => res.status(500).send({message: "Server error"}));
+
+};
