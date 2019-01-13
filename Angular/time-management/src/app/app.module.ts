@@ -8,6 +8,9 @@ import { LoginComponent } from './components/login/login.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { LabelComponent } from './components/label/label.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+// import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { LabelComponent } from './components/label/label.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    // HttpClient,
+
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -50,6 +50,40 @@
 
 
 
+                
+                
+          <tr id="middle" *ngFor="let i of labelList; let index = index">
+
+            <td>{{ index + 1 }}</td>
+
+            <td *ngIf="index != selectedRowIndex">{{i.description}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.description" (input)="i.description=$event.target.textContent"></td>
+            </ng-container>
+
+            
+
+            <td *ngIf="!editLabel">
+              <a class="action-btn" (click)="onEdit(index)">
+                <p id="edit" class="material-icons pointer" title="Edit">edit</p>
+              </a>
+            </td>
+
+
+            <td *ngIf="editLabel && selectedRowIndex == index">
+              <a class="action-btn" (click)="selectIdProforma(i)" (click)="onSave(i)">
+                <p id="save" class="material-icons pointer" title="Save">save</p>
+              </a>
+            </td>
+
+            <td *ngIf="editLabel && selectedRowIndex == index">
+              <a class="action-btn" (click)="onCancel()">
+                <p id="cancel" class="material-icons pointer" title="Cancel">cancel</p>
+              </a>
+            </td>
+
+
+            </tr>
 
 
 

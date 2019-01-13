@@ -10,13 +10,13 @@ import { Label } from "src/app/models/label"
 export class LabelService {
   baseURL = environment.rootURL + `/labels`;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
 
   
-  // getLabel() {
-  //   return this.http.get(this.baseURL + `/get`);
-  // }
+  getLabel() {
+    return this.http.get(this.baseURL + `/get`);
+  }
 
   // create(label: Label) {
   //   return this.http.post(this.baseURL + "/create", label);

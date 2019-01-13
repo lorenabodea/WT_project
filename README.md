@@ -116,4 +116,6 @@ Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointmen
 -> npm start (aplicatia ruleaza pe portul 3333 configurat in file-ul bin/www)  
 Alte tool-uri necesare: XAMPP(am lucrat cu baze de date mySql (localhost/phpmyadmin dupa ce dam start MySql din XAMPP)
 
+->instalarea extensiei Allow-Control-Allow-Origin(https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US)
+
 

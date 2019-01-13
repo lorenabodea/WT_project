@@ -17,14 +17,15 @@ export class LabelComponent implements OnInit {
   constructor(private labelService: LabelService) { }
 
   ngOnInit() {
-    // this.refreshLabel();
+    this.refreshLabel();
   }
 
   
   refreshLabel() {
-    // this.labelService.getLabel().subscribe((res) => {
-    //   this.extractLabel(res);
-    // });
+    this.labelService.getLabel().subscribe((res) => {
+      this.extractLabel(res);
+      console.log(res);
+    });
   }
 
   extractLabel(res) {

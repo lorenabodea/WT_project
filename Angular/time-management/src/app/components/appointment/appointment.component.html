@@ -39,10 +39,19 @@
                   <th id="table-header" width="20%">
                     <font color="white">End Hour</font>
                   </th>
+                  <th id="table-header" width="10%">
+                    <font color="white">Private</font>
+                  </th>
 
       
-                  <th id="deleteAppointment" *ngIf="!deleteAppointment" id="table-header" style="width: 5%">
-                    <font color="white">Delete</font>
+                  <th id="editAppointment" *ngIf="!editAppointment" id="table-header" style="width: 5%">
+                    <font color="white">Edit</font>
+                  </th>
+                  <th *ngIf="editAppointment" id="table-header" style="width: 5%">
+                    <font color="white">Save</font>
+                  </th>
+                  <th *ngIf="editAppointment" id="table-header" style="width: 5%">
+                    <font color="white">Cancel</font>
                   </th>
 
                 </tr>
@@ -54,7 +63,63 @@
 
 
 
+                
+          <tr id="middle" *ngFor="let i of appointmentList; let index = index">
 
+            <td>{{ index + 1 }}</td>
+
+            <td *ngIf="index != selectedRowIndex">{{i.title}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.title" (input)="i.title=$event.target.textContent"></td>
+            </ng-container>
+
+            
+            <td *ngIf="index != selectedRowIndex">{{i.date}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.date" (input)="i.date=$event.target.textContent"></td>
+            </ng-container>
+
+
+            <td *ngIf="index != selectedRowIndex">{{i.start_hour}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.start_hour" (input)="i.start_hour=$event.target.textContent"></td>
+            </ng-container>
+
+
+            <td *ngIf="index != selectedRowIndex">{{i.end_hour}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.end_hour" (input)="i.end_hour=$event.target.textContent"></td>
+            </ng-container>
+
+            <td *ngIf="index != selectedRowIndex">{{i.private}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.private" (input)="i.private=$event.target.textContent"></td>
+            </ng-container>
+
+
+
+            
+            <td *ngIf="!editAppointment">
+              <a class="action-btn" (click)="onEdit(index)">
+                <p id="edit" class="material-icons pointer" title="Edit">edit</p>
+              </a>
+            </td>
+
+
+            <td *ngIf="editAppointment && selectedRowIndex == index">
+              <a class="action-btn" (click)="selectIdProforma(i)" (click)="onSave(i)">
+                <p id="save" class="material-icons pointer" title="Save">save</p>
+              </a>
+            </td>
+
+            <td *ngIf="editAppointment && selectedRowIndex == index">
+              <a class="action-btn" (click)="onCancel()">
+                <p id="cancel" class="material-icons pointer" title="Cancel">cancel</p>
+              </a>
+            </td>
+
+
+            </tr>
 
 
 

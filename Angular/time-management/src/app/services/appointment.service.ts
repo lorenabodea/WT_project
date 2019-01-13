@@ -11,13 +11,13 @@ export class AppointmentService {
   
   baseURL = environment.rootURL + `/appointments`;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
 
   
-  // getAppointment() {
-  //   return this.http.get(this.baseURL + `/get`);
-  // }
+  getAppointment() {
+    return this.http.get(this.baseURL + `/get`);
+  }
 
   // create(appointment: Appointment) {
   //   return this.http.post(this.baseURL + "/create", appointment);

@@ -1,142 +1,145 @@
 body {
-    color: #3c475e;
-    background: #f7f1f1ee;
-    font-family: 'Roboto', sans-serif;
-    padding: 30px;
-    padding-top: 64px;
-  }
-  
-  #table-header {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 15px;
-    background-color: #4a86be;
-    vertical-align: middle;
-  }
-  
-  
-  .table-wrapper {
-    background: #fff;
-    padding: 16px;
-    /* height: 110vh; */
-    height: auto;
-    width: auto;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-    border-collapse: separate;
-  
-  }
-  
-  .table-title {
-    font-size: 15px;
-    padding-bottom: 10px;
-    margin: 0 0 10px;
-    min-height: 45px;
-  }
-  
-  .table-title h2 {
-    margin: 5px 0 0;
-    font-size: 24px;
-  }
-  
-  .table-title select {
-    border-color: black;
-    border-width: 0 0 1px 0;
-    padding: 3px 10px 3px 5px;
-    margin: 0 5px;
-  }
-  
-  .table-title .show-entries {
-    margin-top: 7px;
-  }
-  
-  table.table tr th {
-    border-color: black;
-    text-align: center;
-    height: 20px
-  }
-  
-  
-  table.table tr td {
-    border-color: black;
-    text-align: center;
-    height: 170px;
-  
-  }
-  
-  table.table th i {
-    font-size: 13px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  table.table td {
-    width: 200px;
-    vertical-align: middle;
-  
-    /* overflow: hidden;
-        display: inline-block;
-        white-space: nowrap; */
-  }
-  
-  table.table td a {
-    color: #a0a5b1;
-    display: inline-block;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-  
-  #text {
-    width: 1000px;
-    overflow: hidden;
-    vertical-align: middle;
-  }
-  
-  
-  p#edit {
-    color: #fc9105;
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  p#save {
-    color: green;
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  p#cancel {
-    color: rgb(8, 137, 197);
-    font-size: 25px;
-    cursor: pointer;
-  }
-  
-  
-  td#edittd {
-    background-color: #f5f5f5;
-  }
-  
+  color: #3c475e;
+  background: #f7f1f1ee;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  padding-top: 64px;
+}
 
-  
+#table-header {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 15px;
+  background-color: #4a86be;
+  vertical-align: middle;
+}
 
-  
-  input[type=text] {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border: 3px solid #f1f1f1;
- 
-  }
-  
 
-  input[type=button] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 40%;
+.table-wrapper {
+  background: #fff;
+  padding: 16px;
+  /* height: 110vh; */
+  height: auto;
+  width: auto;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  border-collapse: separate;
 
-  }
+}
+
+.table-title {
+  font-size: 15px;
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+  min-height: 45px;
+}
+
+.table-title h2 {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+.table-title select {
+  border-color: black;
+  border-width: 0 0 1px 0;
+  padding: 3px 10px 3px 5px;
+  margin: 0 5px;
+}
+
+.table-title .show-entries {
+  margin-top: 7px;
+}
+
+/* table.table tr th {
+  border-color: black;
+  text-align: center;
+  height: 20px
+}
+
+
+table.table tr td {
+  border-color: black;
+  text-align: center;
+  height: 170px;
+
+}
+ */
+table.table th i {
+  font-size: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+table.table td {
+  /* width: 200px; */
+  vertical-align: middle;
+  text-align: center;
+
+  /* overflow: hidden;
+      display: inline-block;
+      white-space: nowrap; */
+}
+
+table.table td a {
+  color: #a0a5b1;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#text {
+  /* width: 1000px; */
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+p#edit {
+  color: #fc9105;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+p#save {
+  color: green;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+p#cancel {
+  color: rgb(8, 137, 197);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+td#edittd {
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border: 3px solid #f1f1f1;
+
+}
+
+
+input[type=button] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+
+}
