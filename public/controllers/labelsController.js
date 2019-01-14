@@ -35,8 +35,8 @@ module.exports.deleteLabel = (req,res) => {
 
 	Labels.findOne({
 		where:{
-            description: req.body.description,
-            user_id: req.body.user_id
+            id: req.params.id
+         //   user_id: req.body.user_id
 		},
 		raw: true
 	}).then((result) => {
@@ -45,8 +45,8 @@ module.exports.deleteLabel = (req,res) => {
 
 			Labels.destroy({
 				where:{
-                    description: req.body.description,
-                    user_id: req.body.user_id
+					id: req.params.id
+                   // user_id: req.body.user_id
 				}
 			}).catch(() => res.status(500).send({message: "Labels was not deleted"}));
 
