@@ -12,6 +12,9 @@ export class AppointmentComponent implements OnInit {
   id: any = 0;
   editAppointment: boolean = false;
   selectedRowIndex = -1;
+
+  newArray: any = [];
+  finalList = [];
   
   constructor(private appointmentService: AppointmentService) { }
 
@@ -66,7 +69,10 @@ export class AppointmentComponent implements OnInit {
         location.reload()
       })
     }
+  }
 
+  onSubmit() {
+ 
   }
 
   

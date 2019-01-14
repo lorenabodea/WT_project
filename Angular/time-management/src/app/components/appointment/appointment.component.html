@@ -76,27 +76,25 @@
             
             <td *ngIf="index != selectedRowIndex">{{i.date}}</td>
             <ng-container *ngIf="selectedRowIndex == index">
-              <td id="edittd" contenteditable='true' [textContent]="i.date" (input)="i.date=$event.target.textContent"></td>
+              <td id="edittd" contenteditable='false' [textContent]="i.date" (input)="i.date=$event.target.textContent"></td>
             </ng-container>
 
 
             <td *ngIf="index != selectedRowIndex">{{i.start_hour}}</td>
             <ng-container *ngIf="selectedRowIndex == index">
-              <td id="edittd" contenteditable='true' [textContent]="i.start_hour" (input)="i.start_hour=$event.target.textContent"></td>
+              <td id="edittd" contenteditable='false' [textContent]="i.start_hour" (input)="i.start_hour=$event.target.textContent"></td>
             </ng-container>
 
 
             <td *ngIf="index != selectedRowIndex">{{i.end_hour}}</td>
             <ng-container *ngIf="selectedRowIndex == index">
-              <td id="edittd" contenteditable='true' [textContent]="i.end_hour" (input)="i.end_hour=$event.target.textContent"></td>
+              <td id="edittd" contenteditable='false' [textContent]="i.end_hour" (input)="i.end_hour=$event.target.textContent"></td>
             </ng-container>
 
             <td *ngIf="index != selectedRowIndex">{{i.private}}</td>
             <ng-container *ngIf="selectedRowIndex == index">
-              <td id="edittd" contenteditable='true' [textContent]="i.private" (input)="i.private=$event.target.textContent"></td>
+              <td id="edittd" contenteditable='false' [textContent]="i.private" (input)="i.private=$event.target.textContent"></td>
             </ng-container>
-
-
 
             
 
