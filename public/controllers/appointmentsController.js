@@ -44,28 +44,56 @@ module.exports.createAppointment = (req,res) => {
     });
 };
 
-module.exports.deleteAppointment = (req,res) => {
+module.exports.updateAppointment = (req,res) => {
 
 	Appointments.findOne({
 		where:{
-			date: req.body.date,
+			/*date: req.body.date,
             start_hour: req.body.start_hour,
-            end_hour: req.body.end_hour,
-            user_id: req.body.user_id,	//will be req.session
+            end_hour: req.body.end_hour,*/
+            title: req.params.title,	//will be req.session
 		},
 		raw: true
 	}).then((result) => {
 
 		if(result){
+            let privacy = result.private;
+			Appointments.update({ 
+                title: req.body.title,
+            },
+        { where: {
+            //de completat cu user id dupa ce facem middleware
+            title:req.params.title
+                 }
+        }).catch(() => res.status(500).send({message: "Appointment was not updatedss"}));
 
-			Appointments.destroy({
-				where:{
-					date: req.body.date,
-                    start_hour: req.body.start_hour,
-                    end_hour: req.body.end_hour,
-                    user_id: req.body.user_id,
-				}
-			}).catch(() => res.status(500).send({message: "Appointment was not deleted"}));
+			res.status(200).send({message: "Appointment was updated"});
+		}
+		else{
+			res.status(404).send({message: "Appointment was not found"});
+		}
+
+	});
+};
+module.exports.deleteAppointment = (req,res) => {
+
+	Appointments.findOne({
+		where:{
+			/*date: req.body.date,
+            start_hour: req.body.start_hour,
+            end_hour: req.body.end_hour,*/
+            id: req.params.id,	//will be req.session
+		},
+		raw: true
+	}).then((result) => {
+
+		if(result){
+			Appointments.destroy(
+        { where: {
+            //de completat cu user id dupa ce facem middleware
+            id:req.params.id
+                 }
+        }).catch(() => res.status(500).send({message: "Appointment was not deleted"}));
 
 			res.status(200).send({message: "Appointment was deleted"});
 		}
