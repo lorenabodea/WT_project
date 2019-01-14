@@ -51,7 +51,7 @@ module.exports.updateAppointment = (req,res) => {
 			/*date: req.body.date,
             start_hour: req.body.start_hour,
             end_hour: req.body.end_hour,*/
-            title: req.params.title,	//will be req.session
+            id: req.params.id,	//will be req.session
 		},
 		raw: true
 	}).then((result) => {
@@ -63,7 +63,7 @@ module.exports.updateAppointment = (req,res) => {
             },
         { where: {
             //de completat cu user id dupa ce facem middleware
-            title:req.params.title
+            id:req.params.id
                  }
         }).catch(() => res.status(500).send({message: "Appointment was not updatedss"}));
 
