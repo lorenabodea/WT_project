@@ -64,7 +64,7 @@ export class AppointmentComponent implements OnInit {
   onDelete(appointment){
     //de implementat
     if (confirm('Are you sure you want to permanently delete this Appointment?') == true) {
-      this.appointmentService.deleteAppointment(appointment).subscribe((res) => {
+      this.appointmentService.deleteAppointment(appointment.id).subscribe((res) => {
         this.refreshAppointment()
         location.reload()
       })
@@ -72,6 +72,7 @@ export class AppointmentComponent implements OnInit {
   }
 
   onSubmit() {
+    // this.newArray.push()
  
   }
 

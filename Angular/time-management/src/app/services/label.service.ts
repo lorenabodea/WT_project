@@ -27,8 +27,8 @@ export class LabelService {
   //   return this.http.put(this.baseURL + "/update", label);
   // }
 
-  deleteLabel(label: Label){
-    return this.http.delete(this.baseURL + `/delete`);
+  deleteLabel(id: number){
+    return this.http.delete(this.baseURL + `/delete`  + `/${id}`);
   }
 
 }

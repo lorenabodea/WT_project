@@ -19,13 +19,13 @@ export class AppointmentService {
     return this.http.get(this.baseURL + `/get`);
   }
 
-  // create(appointment: Appointment) {
-  //   return this.http.post(this.baseURL + "/create", appointment);
-  // }
+  create(appointment: Appointment) {
+    return this.http.post(this.baseURL + "/create", appointment);
+  }
 
 
-  deleteAppointment(appointment: Appointment){
-    return this.http.delete(this.baseURL + `/delete`);
+  deleteAppointment(id: number){
+    return this.http.delete(this.baseURL + `/delete`  + `/${id}`);
   }
 
 }

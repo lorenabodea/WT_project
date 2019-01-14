@@ -54,15 +54,15 @@ export class LabelComponent implements OnInit {
     this.selectedRowIndex = -1;
   }
 
+
   onDelete(label){
     //de implementat
     if (confirm('Are you sure you want to permanently delete this Label?') == true) {
-      this.labelService.deleteLabel(label).subscribe((res) => {
+      this.labelService.deleteLabel(label.id).subscribe((res) => {
         this.refreshLabel()
         location.reload()
       })
     }
-
   }
 
 

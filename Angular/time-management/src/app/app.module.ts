@@ -9,6 +9,7 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { LabelComponent } from './components/label/label.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+ import { FormsModule } from '@angular/forms';
 
 // import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -20,11 +21,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     CalendarComponent,
     AppointmentComponent,
     LabelComponent
+    // 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     // HttpClient,
 
   ],
