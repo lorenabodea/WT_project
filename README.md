@@ -115,7 +115,8 @@ Alte produse similare existente pe piata: Setmore, SimplyBook, Square Appointmen
 -> npm install (pentru a intrala modulele node necesare)  
 -> npm start (aplicatia ruleaza pe portul 3333 configurat in file-ul bin/www)  
 Alte tool-uri necesare: XAMPP(am lucrat cu baze de date mySql (localhost/phpmyadmin dupa ce dam start MySql din XAMPP)
-
+->npm install @angular/cli
+->ng serve --open (in time-management folder)
 ->instalarea extensiei Allow-Control-Allow-Origin(https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US)
 
 

@@ -10,6 +10,7 @@ import { AppointmentComponent } from './components/appointment/appointment.compo
 import { LabelComponent } from './components/label/label.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
  import { FormsModule } from '@angular/forms';
+import { CompanyComponent } from './components/company/company.component';
 
 // import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -20,7 +21,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     LoginComponent,
     CalendarComponent,
     AppointmentComponent,
-    LabelComponent
+    LabelComponent,
+    CompanyComponent
     // 
   ],
   imports: [
