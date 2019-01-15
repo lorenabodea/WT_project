@@ -1,3 +1,65 @@
-<p>
-  company works!
-</p>
+<body>
+    <div class="pad" style="padding-left: 10px">
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <div class="panel with-nav-tabs panel-default">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-12">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <h2 class="text-center">
+            <b>Companies</b>
+          </h2>
+        </div>
+        <table class="table table-bordered table-responsive" width="100%">
+          <thead>
+            <tr id="first">
+
+                <th id="table-header" width="5%">
+                    <font color="white">No.</font>
+                  </th>
+                  <th id="table-header" width="25%">
+                    <font color="white">Name</font>
+                  </th>
+                  <th id="table-header" width="20%">
+                    <font color="white">Location</font>
+                  </th>
+
+                </tr>
+              </thead>
+
+              <tbody>
+
+          <tr id="middle" *ngFor="let i of companiesList; let index = index">
+
+            <td>{{ index + 1 }}</td>
+
+            <td *ngIf="index != selectedRowIndex">{{i.name}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='true' [textContent]="i.name" (input)="i.name=$event.target.textContent"></td>
+            </ng-container>
+
+
+            <td *ngIf="index != selectedRowIndex">{{i.location}}</td>
+            <ng-container *ngIf="selectedRowIndex == index">
+              <td id="edittd" contenteditable='false' [textContent]="i.location" (input)="i.location=$event.target.textContent"></td>
+            </ng-container>
+
+            </tr>
+              </tbody>
+
+            </table>
+
+          </div>
+        </div>
+
+        <br>
+
+      </body>

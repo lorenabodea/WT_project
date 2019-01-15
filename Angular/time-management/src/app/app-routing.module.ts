@@ -5,6 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { LabelComponent } from './components/label/label.component';
+import { CompanyComponent } from './components/company/company.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'labels',
     component: LabelComponent
+  },
+  {
+    path: 'companies',
+    component: CompanyComponent
   }
 ];
 

@@ -13,7 +13,7 @@ export class LabelService {
   constructor(private http: HttpClient) { }
 
 
-  
+
   getLabel() {
     return this.http.get(this.baseURL + `/get`);
   }
@@ -22,10 +22,10 @@ export class LabelService {
     return this.http.post(this.baseURL + "/create", label);
   }
 
-  // updateLabel(label: Label){
-    
-  //   return this.http.put(this.baseURL + "/update", label);
-  // }
+  updateLabel(id: number){
+
+    return this.http.put(this.baseURL + "/update" + `/${id}`);
+  }
 
   deleteLabel(id: number){
     return this.http.delete(this.baseURL + `/delete`  + `/${id}`);

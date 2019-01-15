@@ -8,19 +8,23 @@ import { Appointment } from "src/app/models/appointment"
   providedIn: 'root'
 })
 export class AppointmentService {
-  
+
   baseURL = environment.rootURL + `/appointments`;
 
   constructor(private http: HttpClient) { }
 
 
-  
+
   getAppointment() {
     return this.http.get(this.baseURL + `/get`);
   }
 
   create(appointment: Appointment) {
-    return this.http.post(this.baseURL + "/create", appointment);
+    return this.http.post(this.baseURL + `/create`, appointment);
+  }
+
+  updateAppointment(id: number){
+    return this.http.put(this.baseURL + `/update` + `/${id}`);
   }
 
 

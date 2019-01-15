@@ -114,12 +114,11 @@ p#cancel {
   cursor: pointer;
 }
 
-p#cancel {
-  color: rgb(8, 137, 197);
+p#delete {
+  color: #ce0f45;
   font-size: 15px;
   cursor: pointer;
 }
-
 
 td#edittd {
   background-color: #f5f5f5;

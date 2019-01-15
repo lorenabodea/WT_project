@@ -20,7 +20,7 @@ export class LabelComponent implements OnInit {
     this.refreshLabel();
   }
 
-  
+
   refreshLabel() {
     this.labelService.getLabel().subscribe((res) => {
       this.extractLabel(res);
@@ -48,8 +48,8 @@ export class LabelComponent implements OnInit {
   }
 
   onSave(label) {
-    // this.labelService.updateLabel(label).toPromise().then(res => {
-    // });
+    this.labelService.updateLabel(label.id).toPromise().then(res => {
+    });
     this.editLabel = false;
     this.selectedRowIndex = -1;
   }

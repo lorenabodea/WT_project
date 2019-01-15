@@ -2,15 +2,15 @@
     <div class="pad" style="padding-left: 10px">
       <div class="row">
         <div class="col-md-12">
-  
-  
+
+
           <div class="panel with-nav-tabs panel-default">
-  
+
           </div>
         </div>
       </div>
     </div>
-  
+
     <div class="container col-12">
       <div class="table-wrapper">
         <div class="table-title">
@@ -21,8 +21,8 @@
         <table class="table table-bordered table-responsive" width="100%">
           <thead>
             <tr id="first">
-  
-  
+
+
 
                 <th id="table-header" width="10%">
                     <font color="white">No.</font>
@@ -31,7 +31,7 @@
                     <font color="white">Label Description</font>
                   </th>
 
-      
+
                   <th id="editLabel" *ngIf="!editLabel" id="table-header" style="width: 5%">
                     <font color="white">Edit</font>
                   </th>
@@ -50,8 +50,8 @@
 
 
 
-                
-                
+
+
           <tr id="middle" *ngFor="let i of labelList; let index = index">
 
             <td>{{ index + 1 }}</td>
@@ -61,7 +61,7 @@
               <td id="edittd" contenteditable='true' [textContent]="i.description" (input)="i.description=$event.target.textContent"></td>
             </ng-container>
 
-            
+
 
             <td *ngIf="!editLabel">
               <a class="action-btn" (click)="onEdit(index)">
@@ -74,7 +74,7 @@
 
 
             <td *ngIf="editLabel && selectedRowIndex == index">
-              <a class="action-btn" (click)="selectIdProforma(i)" (click)="onSave(i)">
+              <a class="action-btn" (click)="selectIdLabel(i)" (click)="onSave(i)">
                 <p id="save" class="material-icons pointer" title="Save">save</p>
               </a>
             </td>
@@ -99,14 +99,13 @@
 
           </div>
         </div>
-      
+
         <br>
-      
+
         <h3>Add a new label:</h3>
         <input type="text" placeholder="Label Description"><br>
         <input type="button" value="Save Label"><br><br>
 
-      
-        
+
+
       </body>
-      

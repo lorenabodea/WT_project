@@ -15,7 +15,7 @@ export class AppointmentComponent implements OnInit {
 
   newArray: any = [];
   finalList = [];
-  
+
   constructor(private appointmentService: AppointmentService) { }
 
   ngOnInit() {
@@ -39,7 +39,7 @@ export class AppointmentComponent implements OnInit {
   }
 
 
-  
+
   onEdit(rowIndex) {
     this.editAppointment = true;
     this.selectedRowIndex = rowIndex;
@@ -52,14 +52,14 @@ export class AppointmentComponent implements OnInit {
   }
 
   onSave(appointment) {
-    // this.appointmentService.putProforma(appointment).toPromise().then(res => {
-    // });
-    // this.editAppointment = false;
-    // this.selectedRowIndex = -1;
+    this.appointmentService.updateAppointment(appointment.id).toPromise().then(res => {
+    });
+    this.editAppointment = false;
+    this.selectedRowIndex = -1;
   }
 
 
-  
+
 
   onDelete(appointment){
     //de implementat
@@ -73,10 +73,9 @@ export class AppointmentComponent implements OnInit {
 
   onSubmit() {
     // this.newArray.push()
- 
+
   }
 
-  
+
 
 }
-
