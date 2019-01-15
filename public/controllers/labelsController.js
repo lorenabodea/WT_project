@@ -63,7 +63,7 @@ module.exports.updateLabel = (req, res) => {
 
 	Labels.findOne({
 		where: {
-            description:req.params.description
+            id:req.params.id
         },
 		raw: true
 		}).then((result) => {
@@ -74,7 +74,7 @@ module.exports.updateLabel = (req, res) => {
 						},
                     { where: {
 						//de completat cu user id dupa ce facem middleware
-						description:req.params.description
+						id:req.params.id
                     		 }
                     }
                 ).catch(() => res.status(500).send({message: "Error"}));
