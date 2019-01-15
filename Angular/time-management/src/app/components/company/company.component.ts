@@ -10,6 +10,7 @@ import {Company } from 'src/app/models/company';
 export class CompanyComponent implements OnInit {
 
   companiesList= [];
+  id: any = 0;
 
   constructor(private companyService: CompanyService) { }
 

@@ -1,5 +1,5 @@
 let Sequelize = require('sequelize');
-const sequelize = new Sequelize('time_management', 'root', 'pass', {
+const sequelize = new Sequelize('time_management', 'root', '', {
 	dialect: 'mysql',
 	host: 'localhost',
 	charset: 'utf8',

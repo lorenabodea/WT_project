@@ -9,6 +9,8 @@ import { Label } from 'src/app/models/label';
 })
 export class LabelComponent implements OnInit {
 
+  description: any = '';
+  descriptions: Array<any> = [];
   labelList = [];
   id: any = 0;
   editLabel: boolean = false;
@@ -65,6 +67,19 @@ export class LabelComponent implements OnInit {
     }
   }
 
+  onSubmit() {
+    // this.newArray.push()
+    let label = {
+      description: this.description
+    }
 
+    // this.descriptions.push(label);
+    // this.labelService.postLabel(JSON.stringify(label.description)).then((result) => {
+    // })
+    // this.description = '';
+
+    this.refreshLabel();
+
+  }
 
 }

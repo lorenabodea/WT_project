@@ -102,10 +102,16 @@
 
         <br>
 
-        <h3>Add a new label:</h3>
-        <input type="text" placeholder="Label Description"><br>
-        <input type="button" value="Save Label"><br><br>
 
+        <form (ngSubmit)="onSubmit()" id="formName">
+      		<h3>Add a new label:</h3>
+      		<div class="form-group">
+      			<input type="text" class="form-control" placeholder="Label Description" [(ngModel)]="nameModel" name="description" id="description" #name="ngModel"
+             required><br><br>
+
+      		</div>
+          <button type="submit" class="btn btn-success" value="x">Save label</button>
+      	</form>
 
 
       </body>
